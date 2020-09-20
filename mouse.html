@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mouse.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>hello</h2>
+        <h2>how is it</h2>
+        <div class="circle"></div>
+    </section>
+    <script type="text/javascript">
+        const pos = document.documentElement;
+        pos.addEventListener('mousemove', e =>{
+            pos.style.setProperty('--x', e.clientX + 'px')
+            pos.style.setProperty('--y', e.clientY + 'px')
+        })
+    </script>
+</body>
+</html>
